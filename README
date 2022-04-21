@@ -1,0 +1,39 @@
+% The following nest of folders contain the MATLAB code used within my Thesis 
+%for solving the 2D Helmholtz equation with Dirichlet boundary conditions 
+%via either an indirect or direct boundary integral formulation. 
+
+%For any questions please email me at: jacob.rowbottom2017@my.ntu.ac.uk
+
+%Please copy the Raw data from the corresponding files you wish to use and
+%save as mfiles with the same names as the ones labelled here.
+
+% Within the Indirect BEM folder contains the code for solving the
+% Helmholtz via the indirect BEM with either the Galerkin or the
+% Collocation discretisation method as shown by the subfolders. For each
+% Collcoation and Galerkin subfolder the discretisation methods are solved using either 
+%piecewise Constant or piecewise Linear basis functions as shown by the subsubfolders. Finally, within each
+%constant or linear basis function subsubfolder contain the code for
+%solving for the case when the domain is either a polygon or a circle.
+
+%In each folder contains the Main Script file, named MainScript. The other files are the function files used within
+%each Script file. Each MainScript contains an annotated script file which
+%explains which each variable is computing.
+
+%Within the Direct BEM folder contains the code for solving the
+% Helmholtz via the direct BEM with a collocation method with piecewise constant
+% basis functions. This contains the Main Script file, named MainScript. The other files are the function files used within
+%each Script file. The MainScript contains an annotated script file which
+%explains which each variable is computing. The MainScript file is set up
+%to solve for the case when there is a source point excitation inside the
+%domain or for the case when there are Neumann Boundayr conditions. 
+
+%For the case when there is a Neumann Boundary condition simply run the
+%code up to Stage 2. 
+%For the case when there is a source point inside the domain run the
+%complete code. For the L-shape domain comment out the code in the MainScript file and inside the
+%PointSourceNum file where specified
+
+%For further understanding of the methodolgy behind the code we refer the
+%reader to Chapter 2 of my Thesis where it is discussed in greater detail.
+%For further understanding of the key equations requid to solve for each
+%method we refer the reader to  Figure 2.3 of my Thesis. 
